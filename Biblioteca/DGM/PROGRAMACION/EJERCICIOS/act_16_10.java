@@ -1,4 +1,4 @@
-package Biblioteca.DGM.PROGRAMACION.EJERCICIOS;
+package EJERCICIOS;
 
 import java.util.Scanner;
 
