@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="es" xml:lang="es">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Rellena tu CV</title>
+</head>
+
+<body>
+
+<h3>Rellena tu CV</h3>
+
+<!-- La etiqueta form representa una sección de un documento que contiene controles interactivos 
+que permite a un usuario enviar información a un servidor web-->
+<form action="  " method="post" enctype="multipart/form-data">
+    
+Nombre <br>
+
+<!-- La etiqueta input muestra una caja donde se introduce texto -->
+<input type="text" name="nombre" value="" size="20" maxlength="30" />
+
+<br>
+
+Apellidos <br>
+<input type="text" name="apellidos" value="" size="50" maxlength="80" />
+
+<br>
+
+Contraseña <br>
+<input type="password" name="contrasena" value="" maxlength="10" />
+
+<br>
+
+DNI <br/>
+<input type="text" name="dni" value="" size="10" maxlength="9" />
+
+<br/>
+
+Sexo <br/>
+
+<!--El Atributo checked se usa para indicar que el elemnto esta marcado -->
+<input type="radio" name="sexo" value="hombre" checked="checked" />Hombre<br/>
+<input type="radio" name="sexo" value="mujer" /> Mujer
+
+<br/><br/>
+
+Incluir mi foto <input type="file" name="foto" />
+
+<br/><br/>
+
+<!-- checkbox es un elemento de entrada que te permite insertar un vector o array de valores -->
+<!-- <input name="suscribir" type="checkbox" value="suscribir" checked="checked"/> Suscribirme al boletín de novedades -->
+
+
+<br/><br/>
+
+<input type="submit" name="enviar" value="Guardar cambios" />
+<input type="reset" name="limpiar" value="Borrar los datos introducidos" />
+
+
+</form>
+
+</body>
+
+</html>

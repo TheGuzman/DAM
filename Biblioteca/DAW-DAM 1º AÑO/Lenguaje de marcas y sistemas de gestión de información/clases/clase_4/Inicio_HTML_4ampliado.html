@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario de Ejemplo</title>
+    <meta charset="UTF-8"> 
+   
+</head>
+<body>
+    <h1>Formulario de Ejemplo</h1>
+    <form action="procesar.php" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" min="18" required><br><br>
+        <label for="sexo">Sexo:</label>
+        <select id="sexo" name="sexo" required>
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+            <option value="otro">Otro</option>
+        </select><br><br>
+        <label for="comentarios">Comentarios:</label><br>
+        <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br><br>
+        
+        <!-- Botones de opción para el estado civil -->
+        <label>Estado Civil:</label><br>
+        <input type="radio" id="soltero" name="estadoCivil" value="soltero">
+        <label for="soltero">Soltero</label><br>
+        <input type="radio" id="casado" name="estadoCivil" value="casado">
+        <label for="casado">Casado</label><br>
+        <input type="radio" id="divorciado" name="estadoCivil" value="divorciado">
+        <label for="divorciado">Divorciado</label><br><br>
+
+        <!-- Campo de fecha de nacimiento -->
+        <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+        <input type="date" id="fechaNacimiento" name="fechaNacimiento" required><br><br>
+        
+        <!-- type="date", se muestra un control de calendario en el que los usuarios pueden hacer clic para seleccionar una fecha. 
+        Además, si el navegador admite este tipo de entrada, también proporciona un selector de fecha emergente que facilita la 
+        selección de una fecha válida. -->
+        
+        <!-- Campo de archivo para cargar documentos, imágenes, etc. -->
+        <label for="archivo">Cargar Archivo:</label>
+        <input type="file" id="archivo" name="archivo"><br><br>
+        <!-- type="file", se mostrará un botón de "Examinar" o "Elegir archivo" en el formulario. Cuando los usuarios hacen clic en 
+        este botón, se abrirá un cuadro de diálogo de selección de archivos de su sistema operativo, que les permitirá buscar y 
+        seleccionar el archivo que desean cargar. -->
+
+        <!-- Botón de reinicio para restablecer el formulario -->
+        <input type="reset" value="Restablecer Formulario">
+        
+        
+        
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

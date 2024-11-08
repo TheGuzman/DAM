@@ -1,0 +1,75 @@
+<!-- Error Carácteres -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Ejemplo</title>
+</head>
+<body>
+    <h1>Formulario de Ejemplo</h1>
+    <form action="procesar.php" method="POST">
+        
+        <!-- Etiqueta y campo para el nombre -->
+        <label for="nombre">Nombre:</label>
+        <!--  La etiqueta <label> en HTML se utiliza para asociar un texto descriptivo con un elemento de formulario, -->
+        
+        <input type="text" id="nombre" name="nombre" required><br><br>
+        <!-- Atributo 'type' especifica el tipo de entrada (texto) -->
+        <!-- Atributo 'id' proporciona una identificación única para el campo -->
+        <!-- Atributo 'name' es el nombre que se enviará con el formulario -->
+        <!-- Atributo 'required' indica que este campo es obligatorio -->
+
+        <!-- Etiqueta y campo para el correo electrónico -->
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <!-- Etiqueta y campo para la edad -->
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" min="16" required><br><br>
+        <!-- Atributo 'min' establece el valor mínimo permitido -->
+        <!-- Atributo 'required' indica que este campo es obligatorio -->
+
+        <!-- Etiqueta y menú desplegable para el sexo -->
+        <label for="sexo">Sexo:</label>
+        <!-- Atributo 'id' proporciona una identificación única para el menú desplegable -->
+        <!-- Atributo 'name' es el nombre que se enviará con el formulario -->
+        <!-- Atributo 'required' indica que este campo es obligatorio -->
+        <select id="sexo" name="sexo" required>
+            <!-- 'value' establece el valor que se enviará si se selecciona esta opción -->
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+            <option value="otros">Otros</option>
+        </select><br><br>
+
+        <!-- Etiqueta y campo de texto grande para comentarios -->
+        <label for="comentarios">Comentarios:</label><br>
+        <!-- Atributo 'id' proporciona una identificación única para el campo -->
+        <!-- Atributo 'name' es el nombre que se enviará con el formulario -->
+        <!-- Atributos 'rows' y 'cols' controlan el tamaño visual del área de texto -->
+        <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br><br>
+        
+        <!-- La etiqueta <textarea> en HTML se utiliza para crear un área de texto multi línea en un formulario web -->
+        <!-- Botón de envío con atributos type y value -->
+        <!-- Atributo 'type' especifica el tipo de botón (envío) -->
+        <!-- Atributo 'value' establece el texto en el botón -->
+        
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   

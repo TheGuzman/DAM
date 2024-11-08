@@ -1,0 +1,120 @@
+<!-- El DOCTYPE que debe iniciar cualquier archivo HTML puede contener lo que a algunas personas les parece una declaración de 
+idioma. No obstante, indica el idioma del esquema asociado con este documento, no tiene nada que ver con el idioma del 
+documento mismo.-->
+
+<!DOCTYPE html>
+
+
+
+<html lang="es" dir="ltr">
+
+    <!-- El atributo lang para establecer el idioma del documento o un rango de texto. Por ejemplo, lo siguiente establece 
+    el idioma predeterminado en Español -->
+
+    <!-- El atributo global dir es un atributo enumerado que indica la direccionalidad del texto de los elementos. 
+    Puede tener los siguientes valores : ltr , significa izquierda a derecha y es usado para los lenguajes que son 
+    escritos de izquierda a derecha ( como el Inglés ) -->
+
+    <head>
+
+        <!--La cabecera se inicia con la etiqueta <head> es la primera de las dos partes en que se estructura un documento HTML. 
+        En la cabecera reside información acerca del documento, y generalmente no se ve cuando se navega por él. -->
+
+        <title>Iniciandonos en HTML</title>    <!-- En la cabecera se pone el elemento lleno <title> que es una breve 
+                                               descripción que identifica la página -->
+
+        <meta charset="UTF-8">
+        <!-- El elemento meta con atributo charset en un documento HTML está el destinado a indicar la codificación de 
+        caracteres utilizada (charset).UTF-8 es el sistema de codificación más extendido -->
+
+        <meta name="copyright" content="Propietario del copyright" />
+        <!--Estos dos meta tags anteriores, de uso opcional desde el punto legal, permiten hacer referencia al diseñador de una 
+        página web y al propietario de los derechos del código fuente de una página HTML. En algunos sistemas de gestión de 
+        contenido (CMS), las etiquetas de autor se generan automáticamente y en ellas se nombra a la persona que ha trabajado 
+        la página en último lugar. De esta forma, los administradores pueden extraer del directorio quién gestiona cada 
+        página.. -->
+
+        
+    </head>    <!--Este es el cierre de la cabecera </head>  -->
+    
+        <!-----------------  TABLAS HTML:ESTRUCTURAS Y ELEMENTOS    ------------------>
+
+    <body>
+        <!-- La etiqueta HTLM <body> se utiliza para definir el cuerpo del documento HTML. Específicamente, es la parte en donde
+        se describe el contenido de la página, colores, forma, estructura, texto, imágenes -->
+
+
+        <!-----------------  <CAPTION>   ------------------>
+        
+        <!-- <Ccaption> proporciona un título descriptivo a una tabla. Debe se declarado una sola vez al comienzo de la 
+        tabla-->
+        <caption>Gastos Anuales</caption>
+            <hr> <!--<hr> representa un cambio de tema entre párrafos-->
+            
+        <!-----------------  ENCABEZADO   ------------------>
+
+        <!-- La etiqueta <thead> contiene el conjunto de filas que forman el encabezado de una tabla. Solo debe incluirse una 
+        vez por tabla y tiene que ubicarse inmediatamente antes del cuerpo (elemento <tbody>-->
+        
+        <!-- La etiqueta <th> delimita una celda del encabezado de la tabla. Los elementos <tr> -->
+        <!-- Los elementos <tr> define una fila de celdas en una tabla-->   
+        <table>
+            <colgroup><!-- <colgroup> Permite crear grupos de una o más columnas. También permite asignar atributos comunes
+                a todas las columnas agrupadas. La agrupacion se realiza de izauierda a derecha de manera consecutiva utilizando el
+                atributo span o agragando elementos <col> --> 
+                
+                
+                <col span="1" style="background-color: white;">
+                
+        <!-- Los elementos <col> deben estar contenidos dentro de un elemento <colgroup> --> 
+                <col span="1" style="background-color: khaki;"> 
+
+                <col span="1" style="background-color: greenyellow;"> 
+            </colgroup>
+
+        <!-- El elemento HTML thead define una sección de encabezado en una tabla (elemento HTML table)-->            
+                
+        <thead>
+            <tr><!-- Elemento que representa una fila de una tabla--> 
+            <th>Consola</th>
+        <!-- <th> delimita una celda del encabezado de la tabla. Estos elementos suelen ubicarse en elementos <tr> que se 
+        encuentran, a su vez, en la sección de encabezado <thead> a de pie <tfoot>. Los textos marcados con estas etiquetas 
+        se muestran en negrita -->  
+        
+            <th>Año de Lanzamiento</th>
+            <th>Año de retirada</th>
+            </tr>
+        </thead>
+
+        <tbody> <!-- El elemento tbody contiene a un bloque de filas (tr) que representaa a la sección del cuerpo de una tabla 
+                (table). Este elemento puede ser útil para especificar qué filas proveen información de contenido en la tabla, 
+                en contraste con aquellas que son parte del encabezado (header) o el pie (footer). -->
+            <tr><!-- Elemento que representa una fila de una tabla--> 
+                <th>Play Station 1</th>
+                <th>1994</th>
+                <th>2000</th>
+            </tr>
+            <tr><!-- Elemento que representa una fila de una tabla--> 
+                <th>Play Station 2</th>
+                <th>2000</th>
+                <th>2004</th>
+            </tr>
+            <tr><!-- Elemento que representa una fila de una tabla--> 
+                <th>Play Station 3</th>
+                <th>2006</th>
+                <th>2010</th>
+            </tr>
+            <tr>
+                <th>PS4</th>
+                <th>2013</th>
+                <th>2017</th>
+            </tr>
+            <tr>
+                <th>PS5</th>
+                <th>2020</th>
+                <th>En venta</th>
+            </tr>
+        </tbody>
+     </table>
+    <body>
+</html>

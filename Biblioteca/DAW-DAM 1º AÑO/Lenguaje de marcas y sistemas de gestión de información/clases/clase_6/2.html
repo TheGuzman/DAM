@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Encuesta de Películas</title>
+    <style>
+        /* Estilos para centrar el contenido */
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <h2>Encuesta de Preferencias de Películas</h2>
+    <form action="#">
+        <fieldset>
+            <legend>Información Básica</legend>
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" min="10" max="100" required><br><br>
+
+            <label for="genero-fav">Género Favorito:</label>
+            <select id="genero-fav" name="genero-fav">
+                <option value="accion">Acción</option>
+                <option value="comedia">Comedia</option>
+                <option value="drama">Drama</option>
+                <option value="terror">Terror</option>
+            </select><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferencias de Películas</legend>
+
+            <label>¿Te gustan las películas en 3D?</label><br>
+            <input type="radio" id="si3d" name="3d" value="si">
+            <label for="si3d">Sí</label><br>
+            <input type="radio" id="no3d" name="3d" value="no">
+            <label for="no3d">No</label><br><br>
+
+            <label for="comentarios">Comentarios:</label><br>
+            <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br><br>
+        </fieldset>
+
+        <button type="submit">Enviar Encuesta</button>
+    </form>
+
+    <div class="center">
+        <h3>Trailer de una Película Reciente</h3>
+        <video width="320" height="240" controls>
+            <source src="video/236893_small.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+        </video>
+
+        <h3>Imagen relacionada</h3>
+        <img src="imagenes/turtle-9144782_1280.jpg" alt="Imagen de tortuga" width="320" height="240">
+    </div>
+</body>
+</html>
+

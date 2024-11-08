@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Configuración de Preferencias</title>
+</head>
+<body>
+    <h2>Configuración de Preferencias</h2>
+    <form action="#">
+        <fieldset>
+            <legend>Información Personal</legend>
+            
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" min="18" max="99" required><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferencias de Uso</legend>
+
+            <label for="volumen">Nivel de Volumen:</label>
+            <input type="range" id="volumen" name="volumen" min="0" max="100" value="0">
+            <span id="volDisplay">0</span>%<br><br>
+
+            <label for="brillo">Nivel de Brillo de Pantalla:</label>
+            <input type="range" id="brillo" name="brillo" min="0" max="100" value="0">
+            <span id="brilloDisplay">0</span>%<br><br>
+        </fieldset>
+
+        <button type="submit">Guardar Configuración</button>
+    </form>
+</body>
+</html>
